@@ -18,9 +18,19 @@ a {
   text-decoration: none;
   display: inline-block;
 }
-.form-control{
+.form-control:focus{
   box-shadow: none;
   border-color: inherit;
+}
+.gap-10{
+  gap: 10px;
+
+}
+.gap-15{
+  gap: 15px;
+}
+.gap-30{
+  gap: 30px;
 }
 
 /* Header Part */
@@ -41,7 +51,8 @@ a {
   width: 35px;
   height: 35px;
 }
-.header-bottom .menu-links a{
+.header-bottom .menu-links a,
+.header-bottom .dropdown button{
   color:white;
   font-size: 14px;
   text-transform: uppercase;
@@ -49,5 +60,23 @@ a {
   line-height: 18px;
   letter-spacing: .3;
 
+}
+.header-bottom .dropdown button:focus{
+  box-shadow:none;
+}
+.header-bottom .dropdown-menu{
+  width: 100%;
+  background-color: var(--color-131921);
+  transform: translate3d(0px, 57px, 0px) !important;
+  
+}
+.header-bottom .dropdown-item{
+  padding: 20px;
+  margin-bottom: 3px;
+  border-bottom:1px solid var(--color-3b4149)
+}
+.header-bottom .dropdown-item:hover{
+  background-color: transparent;
+  color: var(--color-febd69) !important;
 }
 /* Header Part End Here */
