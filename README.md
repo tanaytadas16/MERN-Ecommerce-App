@@ -1,4 +1,4 @@
-#Coming Soon !!
+# Coming Soon !!
 
 # Getting Started with Create React App and Redux
 
