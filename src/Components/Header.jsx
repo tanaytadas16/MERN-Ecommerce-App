@@ -34,13 +34,13 @@ const Header = () => {
                     <div className="container-xxl">
                         <div className="row flex-nowrap align-items-center">
                             <div className="col-2">
+                                {/* logo */}
                                 <h2>
-                                    <Link className="text-white">
-                                        Dev Corner
-                                    </Link>
+                                    <Link className="text-white">Tranix</Link>
                                 </h2>
                             </div>
                             <div className="col-5">
+                                {/* search bar */}
                                 <div className="input-group ">
                                     <input
                                         type="text"
@@ -57,8 +57,11 @@ const Header = () => {
                                     </span>
                                 </div>
                             </div>
+
+                            {/* header upper links */}
                             <div className="col-5">
                                 <div className="header-upper-links d-flex flex-row align-items-center justify-content-evenly">
+                                    {/* compare */}
                                     <div>
                                         <Link className="d-flex align-items-center gap-10 text-white">
                                             <img
@@ -70,28 +73,34 @@ const Header = () => {
                                             </p>
                                         </Link>
                                     </div>
+
+                                    {/* wishlist */}
                                     <div>
                                         <Link className="d-flex align-items-center gap-10 text-white">
                                             <img
                                                 src="./images/wishlist.svg"
                                                 alt="wishlist"
                                             />
-                                            <p className="p-1 mb-0">
+                                            <p className=" mb-0">
                                                 Favorite <br /> wishlist
                                             </p>
                                         </Link>
                                     </div>
+
+                                    {/* login */}
                                     <div>
                                         <Link className="d-flex align-items-center gap-10 text-white">
                                             <img
                                                 src="./images/user.svg"
                                                 alt="user"
                                             />
-                                            <p className="p-1 mb-0">
+                                            <p className=" mb-0">
                                                 Login <br /> My Account
                                             </p>
                                         </Link>
                                     </div>
+
+                                    {/* cart */}
                                     <div>
                                         <Link className="d-flex align-items-center gap-10 text-white">
                                             <img
@@ -102,7 +111,7 @@ const Header = () => {
                                                 <span className="badge bg-white text-dark">
                                                     0
                                                 </span>
-                                                <p className="p-1 mb-0">$500</p>
+                                                <p className=" mb-0">$500</p>
                                             </div>
                                         </Link>
                                     </div>
@@ -119,7 +128,9 @@ const Header = () => {
                             <div className="col-12">
                                 <div className="menu-bottom d-flex align-items-center gap-30">
                                     <div>
+                                        {/* dropdown menu */}
                                         <div className="dropdown">
+                                            {/* dropdown button */}
                                             <button
                                                 className="btn btn-secondary dropdown-toggle bg-transparent border-0 d-flex gap-15 align-items-center"
                                                 type="button"
@@ -127,6 +138,7 @@ const Header = () => {
                                                 data-bs-toggle="dropdown"
                                                 aria-expanded="false"
                                             >
+                                                {/* menu icon */}
                                                 <img
                                                     src="images/menu.svg"
                                                     alt="menu icon"
@@ -135,10 +147,13 @@ const Header = () => {
                                                     Shop Categories
                                                 </span>
                                             </button>
+
+                                            {/* dropdown menu */}
                                             <ul
                                                 className="dropdown-menu"
                                                 aria-labelledby="dropdownMenuButton1"
                                             >
+                                                {/* dropdown menu items */}
                                                 <li>
                                                     <Link
                                                         className="dropdown-item text-white"
