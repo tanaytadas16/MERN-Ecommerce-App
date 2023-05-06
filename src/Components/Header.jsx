@@ -1,20 +1,21 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
+import { categoryLinks } from "../Constants";
 const Header = () => {
     return (
         <div>
             <>
                 {/* header first layer */}
-                <header className="header-top-strip py-3">
-                    <div className="container-xxl">
+                <header className="header-top-strip py-2">
+                    <div className="container-fluid">
                         <div className="row">
-                            <div className="col-6 ">
+                            <div className="col-md-6 ">
                                 <p className="text-white mb-0">
                                     Free Shipping Over $100 & Free Returns
                                 </p>
                             </div>
-                            <div className="col-6">
+                            <div className="col-md-6">
                                 <p className="text-end text-white mb-0">
                                     Hotline:
                                     <a
@@ -30,10 +31,10 @@ const Header = () => {
                 </header>
 
                 {/* header second layer */}
-                <header className="header-upper py-3">
-                    <div className="container-xxl">
+                <header className="header-upper py-2">
+                    <div className="container-fluid">
                         <div className="row flex-nowrap align-items-center">
-                            <div className="col-2">
+                            <div className="col-md-2">
                                 {/* logo */}
                                 <h2>
                                     <Link className="text-white">Tranix</Link>
@@ -52,6 +53,12 @@ const Header = () => {
                                     <span
                                         className="input-group-text p-3"
                                         id="basic-addon2"
+                                        onClick={() => {
+                                            // Add your search function here
+                                            console.log(
+                                                "Search button clicked!"
+                                            );
+                                        }}
                                     >
                                         <BsSearch className="fs-6" />
                                     </span>
@@ -59,7 +66,7 @@ const Header = () => {
                             </div>
 
                             {/* header upper links */}
-                            <div className="col-5">
+                            <div className="col-md-5">
                                 <div className="header-upper-links d-flex flex-row align-items-center justify-content-evenly">
                                     {/* compare */}
                                     <div>
@@ -122,7 +129,7 @@ const Header = () => {
                 </header>
 
                 {/* header third layer */}
-                <header className="header-bottom py-3">
+                <header className="header-bottom py-2">
                     <div className="container-xxl">
                         <div className="row">
                             <div className="col-12">
@@ -154,30 +161,24 @@ const Header = () => {
                                                 aria-labelledby="dropdownMenuButton1"
                                             >
                                                 {/* dropdown menu items */}
-                                                <li>
-                                                    <Link
-                                                        className="dropdown-item text-white"
-                                                        to=""
-                                                    >
-                                                        Action
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        className="dropdown-item text-white"
-                                                        to=""
-                                                    >
-                                                        Another action
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        className="dropdown-item text-white"
-                                                        to=""
-                                                    >
-                                                        Something else here
-                                                    </Link>
-                                                </li>
+
+                                                {categoryLinks.map(
+                                                    (dropdownItem) => (
+                                                        <li>
+                                                            <Link
+                                                                id={
+                                                                    dropdownItem.id
+                                                                }
+                                                                className="dropdown-item text-white"
+                                                                to=""
+                                                            >
+                                                                {
+                                                                    dropdownItem.title
+                                                                }
+                                                            </Link>
+                                                        </li>
+                                                    )
+                                                )}
                                             </ul>
                                         </div>
                                     </div>
