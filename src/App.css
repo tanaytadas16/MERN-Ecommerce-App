@@ -10,6 +10,9 @@
   --color-febd69:#febd69;
   --color-232f3e:#232f3e;
   --color-1f131b:#1f313b;
+  --color-bf4800:#bf4800;
+  --color-f5f5f7:#f5f5f7;
+  --color-ededed:#ededed;
 }
 body{
   
@@ -34,11 +37,23 @@ a {
 .gap-30{
   gap: 30px;
 }
-
+.button{
+  background-color: var(--color-232f3e);
+  font-size: 14px;
+  padding: 13px 33px;
+  color: white;
+  border-radius: 25px;
+}
+.button:hover{
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
+}
 /* Header Part */
 .header-top-strip{
   border-bottom: 1px solid var(--color-3b4149);
   background-color:var(--color-131921);
+  font-weight: 300;
+  font-size: 14px;
 }
 .header-upper{
   background-color: #131921;
@@ -127,3 +142,101 @@ footer .input-group-text{
 
 /* Footer Part End Here */
 
+
+/* Home Page Part */
+.main-banner-content{
+  top:15%;
+  left:5%;
+}
+.main-banner-content h4{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-bf4800);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin: 0 0 12px;
+}
+.main-banner-content h5{
+
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: -2px;
+  text-transform: none;
+} 
+.main-banner-content p{
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0 0 20px;
+  letter-spacing: .4px;
+}
+
+
+.small-banner {
+  width: 49%;
+}
+
+.small-banner:nth-child(2n) {
+  clear: both;
+}
+.small-banner-content{
+  top:25%;
+  left:35%;
+  right:10%
+}
+.small-banner-content h4{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-bf4800);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin: 0 0 12px;
+}
+.small-banner-content h5{
+
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: -2px;
+  text-transform: none;
+} 
+.small-banner-content p{
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0 0 20px;
+  letter-spacing: .4px;
+}
+
+/* Home Wrapper-2 */
+.home-wrapper-2{
+  background-color: var(--color-f5f5f7);
+  padding: 50px 0;
+  font-size: 14px;
+}
+/* Home Wrapper-2 Ends here */
+
+/* Categories  */
+.categories{
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+  padding: 15px;
+  flex-basis: calc(25% - 15px);
+  margin-bottom: 15px;
+}
+.categories>div{
+  width: 20%;
+}
+.categories>div>div{
+  width: 60%;
+}
+.categories>div:nth-child(n):not(:nth-child(5n+5)){
+  border-right: 1px solid var(--color-ededed);
+}
+.categories> div:nth-child(-n+5){
+  border-bottom: 1px solid var(--color-ededed);
+ 
+}
+/* Categories Ends Here */
+/* Home Page End Here */

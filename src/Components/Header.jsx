@@ -7,7 +7,7 @@ const Header = () => {
         <div>
             <>
                 {/* header first layer */}
-                <header className="header-top-strip py-2">
+                <header className="header-top-strip py-1">
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-md-6 ">
