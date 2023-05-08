@@ -62,10 +62,11 @@ const Footer = () => {
                                     example@gmail.com
                                 </a>
                                 <div className="socialIcons d-flex align-items-center gap-30">
-                                    {socialIcons.map((item) => (
+                                    {socialIcons.map((item, index) => (
                                         <a
                                             href={item.url}
                                             className="text-white fs-3"
+                                            key={index}
                                         >
                                             {item.icon}{" "}
                                         </a>

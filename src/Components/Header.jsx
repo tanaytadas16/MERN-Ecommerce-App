@@ -163,8 +163,8 @@ const Header = () => {
                                                 {/* dropdown menu items */}
 
                                                 {categoryLinks.map(
-                                                    (dropdownItem) => (
-                                                        <li>
+                                                    (dropdownItem, index) => (
+                                                        <li key={index}>
                                                             <Link
                                                                 id={
                                                                     dropdownItem.id

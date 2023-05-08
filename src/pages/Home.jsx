@@ -1,11 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { mainBanner, smallBanner, services, categories } from "../Constants";
+import {
+    mainBanner,
+    smallBanner,
+    services,
+    categories,
+    brandMarquee,
+    blogData,
+} from "../Constants";
+import Marquee from "react-fast-marquee";
+import BlogCard from "../Components/BlogCard";
 
 const Home = () => {
     return (
         <div>
             <>
+                {/* Main Banner */}
                 <section className="hero-part py-5">
                     <div className="container-xl">
                         <div className="row mb-2">
@@ -48,6 +58,8 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* Services */}
                 <section className="home-wrapper-2 py-5">
                     <div className="container-xl">
                         <div className="row">
@@ -80,6 +92,8 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* Categories */}
                 <section className="home-wrapper-3 py-5">
                     <div className="container-xl">
                         <div className="row">
@@ -99,6 +113,45 @@ const Home = () => {
                                     ))}
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Slider */}
+                <section className="marquee-wrapper home-wrapper py-5">
+                    <div className="container-xl">
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div className="marquee-inner-wrapper card-wrapper d-flex align-items-center">
+                                    <Marquee
+                                        pauseOnHover="true"
+                                        gradient="true"
+                                    >
+                                        {brandMarquee.map((brand, id) => (
+                                            <div className="mx-4 w-25" key={id}>
+                                                <img
+                                                    src={brand.image}
+                                                    alt="brand"
+                                                />
+                                            </div>
+                                        ))}
+                                    </Marquee>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="blog-wrapper home-wrapper py-5">
+                    <div className="container-xl">
+                        <div className="row">
+                            <h4 className="section-heading">Our Latest News</h4>
+                            {blogData.map((blog, index) => (
+                                <BlogCard {...blog} />
+                            ))}
+
+                            {/* <BlogCard />
+                            <BlogCard />
+                            <BlogCard /> */}
                         </div>
                     </div>
                 </section>

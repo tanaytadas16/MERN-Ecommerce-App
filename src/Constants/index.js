@@ -137,3 +137,77 @@ export const categories = [
         image: "images/homeapp.jpg",
     },
 ];
+
+export const brandMarquee = [
+    {
+        id: 1,
+        image: "images/brand-01.png",
+    },
+    {
+        id: 2,
+        image: "images/brand-02.png",
+    },
+    {
+        id: 3,
+        image: "images/brand-03.png",
+    },
+    {
+        id: 4,
+        image: "images/brand-04.png",
+    },
+    {
+        id: 5,
+        image: "images/brand-05.png",
+    },
+    {
+        id: 6,
+        image: "images/brand-06.png",
+    },
+    {
+        id: 7,
+        image: "images/brand-07.png",
+    },
+    {
+        id: 8,
+        image: "images/brand-08.png",
+    },
+];
+
+export const blogData = [
+    {
+        id: 1,
+        title: "The Best Headphones Of 2021: Which One Is Right For You?",
+        image: "images/blog-1.jpg",
+        date: "April 14, 2021",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus",
+        link: "blog-details.html",
+    },
+    {
+        id: 2,
+        title: "The Best Headphones Of 2021: Which One Is Right For You?",
+        image: "images/blog-1.jpg",
+        date: "April 14, 2021",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus",
+        link: "blog-details.html",
+    },
+    {
+        id: 3,
+        title: "The Best Headphones Of 2021: Which One Is Right For You?",
+        image: "images/blog-1.jpg",
+        date: "April 14, 2021",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus",
+        link: "blog-details.html",
+    },
+    {
+        id: 4,
+        title: "The Best Headphones Of 2021: Which One Is Right For You?",
+        image: "images/blog-1.jpg",
+        date: "April 14, 2021",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus",
+        link: "blog-details.html",
+    },
+];
