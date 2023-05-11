@@ -10,6 +10,7 @@ import {
 } from "../Constants";
 import Marquee from "react-fast-marquee";
 import BlogCard from "../Components/BlogCard";
+import ProductCard from "../Components/ProductCard";
 
 const Home = () => {
     return (
@@ -94,7 +95,7 @@ const Home = () => {
                 </section>
 
                 {/* Categories */}
-                <section className="home-wrapper-3 py-5">
+                <section className="home-wrapper-2 py-5">
                     <div className="container-xl">
                         <div className="row">
                             <div className="col-md-12">
@@ -141,17 +142,29 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                <section className="blog-wrapper home-wrapper py-5">
+
+                <section className=" home-wrapper-2 py-5">
+                    <div className="container-xl">
+                        <div className="row">
+                            <h4 className="section-heading">
+                                Featured Collection
+                            </h4>
+
+                            <ProductCard />
+                            <ProductCard />
+                            <ProductCard />
+                            <ProductCard />
+                        </div>
+                    </div>
+                </section>
+
+                <section className="blog-wrapper home-wrapper-2 py-5">
                     <div className="container-xl">
                         <div className="row">
                             <h4 className="section-heading">Our Latest News</h4>
                             {blogData.map((blog, index) => (
                                 <BlogCard {...blog} />
                             ))}
-
-                            {/* <BlogCard />
-                            <BlogCard />
-                            <BlogCard /> */}
                         </div>
                     </div>
                 </section>
