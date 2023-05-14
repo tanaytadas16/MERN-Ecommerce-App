@@ -320,6 +320,16 @@ footer .input-group-text{
   border-radius:10px;
   overflow: hidden;
 } 
+.product-card .product-image img{
+  width: 276px;
+  height: 276px;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+}
+
+/* .product-image img:hover {
+  transform: scale(1.1);
+} */
 .product-card:hover .action-bar{
   right: 15px;
 }
@@ -348,3 +358,14 @@ footer .input-group-text{
 
 
 /* Product card Ends Here */
+
+/* Special Product */
+
+.special-product-card{
+  background-color: white;
+  padding: 10px;
+  border-radius:10px;
+  
+}
+
+/* Special product ends here */

@@ -11,6 +11,7 @@ import {
 import Marquee from "react-fast-marquee";
 import BlogCard from "../Components/BlogCard";
 import ProductCard from "../Components/ProductCard";
+import SpecialProduct from "../Components/SpecialProduct";
 
 const Home = () => {
     return (
@@ -118,6 +119,35 @@ const Home = () => {
                     </div>
                 </section>
 
+                {/* Featured Products */}
+                <section className="featured-wrapper py-5 home-wrapper-2">
+                    <div className="container-xl">
+                        <div className="row">
+                            <div className="col-md-12">
+                                <h4 className="section-heading">
+                                    Featured Collection
+                                </h4>
+                            </div>
+                            <ProductCard />
+                        </div>
+                    </div>
+                </section>
+                <section className="special-wrapper py-5 home-wrapper-2 ">
+                    <div className="container-xl">
+                        <div className="row">
+                            <div className="col-md-12">
+                                <h4 className="section-heading">
+                                    Special Products
+                                </h4>
+                            </div>
+                            <div className="row">
+                                <SpecialProduct />
+                                <SpecialProduct />
+                                <SpecialProduct />
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 {/* Slider */}
                 <section className="marquee-wrapper home-wrapper py-5">
                     <div className="container-xl">
@@ -139,21 +169,6 @@ const Home = () => {
                                     </Marquee>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section className=" home-wrapper-2 py-5">
-                    <div className="container-xl">
-                        <div className="row">
-                            <h4 className="section-heading">
-                                Featured Collection
-                            </h4>
-
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
                         </div>
                     </div>
                 </section>
